@@ -17,391 +17,377 @@ body
 font-family: 'ralewayregular', serif;
 }
 
-    /* Page principale */
-    #bloc_page
-    {
-        margin: 3% 2% 0 2%;
-    }
+/* Page principale */
+#bloc_page
+{
+    margin: 3% 2% 0 2%;
+}
 
-        /* Partie du titre*/
-        #Titre
-        {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin: 5px 0 5px 0;
-        }
+/* Partie du titre*/
+#Titre
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 5px 0;
+}
 
-            /*Logo du site*/
-            #logo
-            {
-                display: flex;
-                align-items: flex-end;
-            }
+/*Logo du site*/
+#logo
+{
+    display: flex;
+    align-items: flex-end;
+}
 
-            #Logo img
-            {
-                width: 80px;
-                height: auto;
-            }
+#Logo img
+{
+    width: 5rem;
+}
 
-            /*Bouton de commande du Titre*/
-            #bouton_titre
-            nav ul
-            {
-                list-style: none;
-                display: flex;
-                align-items: start;
-            }
+/*Bouton de commande du Titre*/
+#bouton_titre nav ul
+{
+    display: flex;
+    list-style: none;
+}
 
-            #bouton_titre
-            nav li
-            {
-                margin-left: 50px;
-            }
+#bouton_titre nav li
+{
+    margin-left: 3rem;
+}
 
-            #bouton_titre
-            nav a
-            {
-                font-size: 15px;
-                color: #181818;
-                padding-bottom: 3px;
-                text-decoration: none;
-            }
+#bouton_titre nav a
+{
+    font-size: 0.8rem;
+    color: black;
+    text-decoration: none;
+}
 
-            #bouton_titre
-            nav a:hover
-            {
-                color: #0065FC;
-            }
+#bouton_titre nav a:hover
+{
+    color: #0065FC;
+}
 
-            #bouton_titre
-            nav a:focus
-            {
-                color: #0065FC;
-            }
+#bouton_titre nav a:focus
+{
+    color: #0065FC;
+}
 
-        /* Partie du menu */
-            /* Slogan du titre */
-            #slogan_titre
-            {
-                display: flex;
-                flex-direction: column;
-                margin: 15px 0 15px 0;
-            }
+/* Partie du menu */
+/* Slogan du titre */
+#slogan_titre
+{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 15px 0;
+}
 
-            #slogan_titre
-            h1
-            {
-                font-size: 18px;
-                margin: 0 0 5px 0;
-            }
+#slogan_titre
+h1
+{
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+}
 
-            #slogan_titre
-            p
-            {
-                font-size: 12px;
-                margin: 0px;
-            }
+#slogan_titre
+p
+{
+    font-size: 0.8rem;
+    margin: 0px;
+}
 
-            /* Recherche du lieu */
-            #recherche
-            {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                width: 330px;
-                height: 35px;
-                margin: 10px 0 10px 0;
-            }
+/* Recherche du lieu */
+#recherche
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 330px;
+    height: 35px;
+    margin: 10px 0 10px 0;
+}
 
-            #recherche
-            label
-            {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 40px;
-                height: 35px;
-                border: none;
-                border-top-left-radius: 10px;
-                border-bottom-left-radius: 10px;
-                background-color: #f2f2f2;
-            }
+#recherche label
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 35px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #f2f2f2;
+}
 
-            #recherche
-            input
-            {
-                padding-left: 10px;
-                width: 190px;
-                height: 35px;
-                border: none;
-            }
+#recherche input
+{
+    padding-left: 10px;
+    width: 190px;
+    height: 35px;
+    border: none;
+}
 
-            #recherche
-            button
-            {
-                width: 100px;
-                height: 35px;
-                border: none;
-                border-top-right-radius: 10px;
-                border-bottom-right-radius: 10px;
-                color:white;
-                background-color: #0065FC;
-            }
+#recherche button
+{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:white;
+    background-color: #0065FC;
+}
 
-            /* Filtre sur le lieu */
-            #filtre
-            {
-                display: flex;
-                flex-direction: row;
-                justify-content: start;
-                align-items: center;
-                font-size: 10px;
-                margin: 10px 0 10px 0;
-            }
+/* Filtre sur le lieu */
+#filtre
+{
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    margin: 10px 0 10px 0;
+}
+#filtre_libelle
+{
+    margin-right: 1rem;
+}
 
-            #filtre_liste
-            nav ul
-            {
-                list-style: none;
-                display: flex;
-                width: auto;
-                height: 35px;
-            }
+#filtre_liste
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    border-left: none;
+    border-radius: 30px;
+}
 
-            #filtre_liste
-            nav li
-            {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-right: 20px;
-                border: 1px solid #f2f2f2;
-                border-left: none;
-                border-radius: 30px               
-            }
+#filtre_liste button
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: #DEEBFF;
+}
 
-            #filtre_liste
-            nav a
-            {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 30px;
-                background-color: #DEEBFF;
-                color: #0065FC;
-                text-decoration: none;
-                font-size: 14px;
-                width: 35px;
-                height: 35px;
-            }
+.bouton_filtre_liste
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border: 1px solid #f2f2f2;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    height: 2rem;
+}
 
-            #filtre_liste
-            nav p
-            {
-                display: flex; 
-                margin-left: 0.5em;
-                margin-right: 1em;
-                font-size: 14px;    
-                font-weight: 600;
-            }
+#filtre_liste i
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    border-radius: 30px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    font-size: 0.8rem;
+    width: 2rem;
+    height: 2rem;
+}
 
-            #filtre_liste
-            nav li:hover
-            {
-                color: #0065FC;
-            }
+.bouton_filtre_liste:hover
+{
+    color: #0065FC;
+}
 
-            /* Slogan des logements */
-            #slogan_logements
-            {
-                display: flex;
-                flex-direction: row;
-                justify-content: start;
-                align-items: center;
-                margin: 10px 0 10px 0;
-            }
+/* Slogan des logements */
+#slogan_logements
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
 
-            #slogan_logements
-            i
-            {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 1px solid;
-                border-color: lightgrey;
-                border-radius: 30px;
-                color: #0065FC;
-                text-decoration: none;
-                font-size: 10px;
-                width: 20px;
-                height: 20px;
-            }
+#slogan_logements
+i
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-color: lightgrey;
+    border-radius: 30px;
+    color: #0065FC;
+    text-decoration: none;
+    font-size: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+}
 
-            #slogan_logements
-            p
-            {
-                display: flex; 
-                margin-left: 10px;
-                font-size: 11px; 
-            }
+#slogan_logements
+p
+{
+    display: flex; 
+    margin-left: 10px;
+    font-size: 0.7rem; 
+}
 
-        /* Partie sur tous les hébergements */
-        #tous_hebergement
-        {
-            display: flex;
-        }
-            /* Hébergements à Marseille */
-            #hebergement
-            {
-                flex: 3;
-                display: flex;
-                flex-direction: column;               
-                width: 70%;
-                height: 800px;
-                background-color: #f2f2f2;
-                border: 1px solid; /*Provisoir*/
-                border-color: red;
-            }
+/* Partie sur tous les hébergements */
+#tous_hebergement
+{
+display: flex;
+}
+/* Hébergements à Marseille */
+#hebergement
+{
+    display: flex;
+    flex-direction: column;               
+    width: 70%;
+    height: 800px;
+    background-color: #f2f2f2;
+    border: 1px solid; /*Provisoir*/
+    border-color: red;
+}
 
-            #titre_hebergement
-            {
-                display: flex;
-                justify-content: start;
-                align-items: flex-start;
-            }
+#titre_hebergement
+{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
 
-            /*#descriptif_hergement*/
-            #detail_hebergement
-            {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                width: 60%;
-                height: 600px;
-            }
+/*#descriptif_hergement*/
+#detail_hebergement
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 600px;
+}
 
-            #detail_hebergement
-            nav li
-            {
-                display: flex;
-                flex-direction: column;
-                width: 250px;
-                height: 200px;
-                border: 1px solid; /*Provisoir*/
-                border-color: black;
-            }
+/*#detail_hebergement
+nav li
+{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border: 1px solid;
+    border-color: black;
+}
 
-            #detail_hebergement
-            nav img
-            {
-                display: flex;
-                width: 20%;
-                height: 100px;
-            }
+#detail_hebergement
+nav img
+{
+    display: flex;
+    width: 20%;
+    height: 100px;
+}*/
 
-            #afficher_plus
-            {
-                display: flex;
-                justify-content: start;
-                align-items: flex-end;
-            }
+#afficher_plus
+{
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
 
-            /* Les plus Populaires */
-            #populaire
-            {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                width: 25%;
-                height: 800px;
-                background-color: #f2f2f2;
-                border: 1px solid; /*Provisoir*/
-                border-color: blue;
-            }
+/* Les plus Populaires */
+#populaire
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 800px;
+    background-color: #f2f2f2;
+    border: 1px solid; /*Provisoir*/
+    border-color: blue;
+}
 
-            #titre_populaire
-            {
-                display: flex;
-                justify-content: start;
-                align-items: flex-start;
-            }
+#titre_populaire
+{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
 
-            #detail_populaire
-            {
-                display: flex;
-                flex-direction: column;
-            }
+#detail_populaire
+{
+    display: flex;
+    flex-direction: column;
+}
 
-            #detail_populaire
-            nav li
-            {
-                display: flex;
-                flex-direction: column;
-                width: 250px;
-                height: 200px;
-                border: 1px solid; /*Provisoir*/
-                border-color: orange;
-            }
+/*#detail_populaire
+nav li
+{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border: 1px solid;
+    border-color: orange;
+}
 
-            #detail_populaire
-            nav img
-            {
-                display: flex;
-                width: 20%;
-                height: 200px;
-            }
+#detail_populaire
+nav img
+{
+    display: flex;
+    width: 20%;
+    height: 200px;
+}
 
-            #detail_populaire
-            nav h2
-            {
-                display: flex;
-                font-size: 15px;
-            }
+#detail_populaire
+nav h2
+{
+    display: flex;
+    font-size: 15px;
+}*/
 
-        /* Activités à Marseille */
-        #activites
-        {
-            display: flex;
-            flex-direction: column;
-            height: auto;
-            border: 1px solid; /*Provisoir*/
-            border-color: green;
-        }
+/* Activités à Marseille */
+#activites
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 1px solid; /*Provisoir*/
+    border-color: green;
+}
 
-        #titre_activite
-        {
-            display: flex;
-            justify-content: start;
-            align-items: flex-start;
-        }
+#titre_activite
+{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
 
-        #detail_activite
-        {
-            display: flex;
-            flex-direction: row;
-        }
+#detail_activite
+{
+    display: flex;
+    flex-direction: row;
+}
 
-        #detail_activite
-        nav img
-        {
-            display: flex;
-            width: 20%;
-            height: 200px;
-        }
+/*#detail_activite
+nav img
+{
+    display: flex;
+    width: 20%;
+    height: 200px;
+}*/
 
-        /* Information diverses */
-        #bas_page
-        {
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            background-color: #f2f2f2;
-        }
+/* Information diverses */
+#bas_page
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: #f2f2f2;
+}
 
-        #a_propos, #nos_hebergements, #assistance
-        {
-            width: 33%;
-            height: auto;
-        }
+#a_propos, #nos_hebergements, #assistance
+{
+    width: 33%;
+    height: auto;
+}
