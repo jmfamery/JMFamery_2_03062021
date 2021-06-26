@@ -227,8 +227,7 @@ i
     height: 1rem;
 }
 
-#slogan_logements
-p
+#slogan_logements p
 {
     display: flex; 
     margin-left: 10px;
@@ -238,18 +237,19 @@ p
 /* Partie sur tous les hébergements */
 #tous_hebergement
 {
-display: flex;
+    display: flex;
+    margin: 10px 0 10px 0;
 }
 /* Hébergements à Marseille */
 #hebergement
 {
     display: flex;
     flex-direction: column;               
-    width: 70%;
-    height: 800px;
+    width: 73%;
+    margin-right: 3%;
+    height: 600px;
+    border-radius: 20px;
     background-color: #f2f2f2;
-    border: 1px solid; /*Provisoir*/
-    border-color: red;
 }
 
 #titre_hebergement
@@ -257,6 +257,12 @@ display: flex;
     display: flex;
     justify-content: start;
     align-items: flex-start;
+    margin-left: 1.5rem;
+}
+
+#titre_hebergement h1
+{
+    font-size: 1rem;
 }
 
 /*#descriptif_hergement*/
@@ -265,34 +271,78 @@ display: flex;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 60%;
-    height: 600px;
+    padding: 1%;
+    height: 80%;
 }
 
-/*#detail_hebergement
-nav li
+.descriptif_hebergement
 {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 200px;
-    border: 1px solid;
-    border-color: black;
+    width: 29%;
+    height: 35%;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 20px;
+    background-color:white;
 }
 
-#detail_hebergement
-nav img
+.descriptif_hebergement img
+{
+    display: flex;    
+    height: 60%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.descriptif_hebergement h2
 {
     display: flex;
-    width: 20%;
-    height: 100px;
-}*/
+    font-size: 0.8rem;
+    margin: 2%;
+    padding-left: 0.5rem;
+}
+
+.descriptif_hebergement p
+{
+    display: flex;
+    font-size: 0.7rem;
+    margin: 2%;
+    padding-left: 0.5rem;
+}
+
+.descriptif_hebergement i
+{
+    display: flex;
+    font-size: 0.7rem;
+    margin: 2%;
+    padding-left: 0.5rem;
+    color: #0065FC;
+}
 
 #afficher_plus
 {
     display: flex;
-    justify-content: start;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#afficher_plus nav ul
+{
+    list-style: none;
+}
+
+#afficher_plus nav a
+{
+    display: flex;
+    font-size: 0.8rem;
+    color: black;
+    text-decoration: none;
+}
+
+#afficher_plus nav a:hover
+{
+    color: #0065FC;
 }
 
 /* Les plus Populaires */
@@ -300,51 +350,91 @@ nav img
 {
     display: flex;
     flex-direction: column;
-    width: 25%;
-    height: 800px;
+    width: 24%;
+    height: 600px;
+    border-radius: 20px;
     background-color: #f2f2f2;
-    border: 1px solid; /*Provisoir*/
-    border-color: blue;
 }
 
 #titre_populaire
 {
     display: flex;
-    justify-content: start;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#titre_populaire h1
+{
+    display: flex;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+#titre_populaire i
+{
+    display: flex;
+    font-size: 0.9rem;
 }
 
 #detail_populaire
 {
     display: flex;
     flex-direction: column;
+    padding: 1%;
+    height: 90%;
 }
 
-/*#detail_populaire
-nav li
+.descriptif_populaire
 {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 200px;
-    border: 1px solid;
-    border-color: orange;
+    flex-wrap: wrap;
+    height: 25%;
+    margin: 2.5%;
+    padding: 2.5%;
+    border-radius: 20px;
+    background-color:white;
 }
 
-#detail_populaire
-nav img
+.descriptif_populaire img
 {
     display: flex;
-    width: 20%;
-    height: 200px;
+    width: 40%;    
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
-#detail_populaire
-nav h2
+.descriptif_populaire h2
 {
     display: flex;
-    font-size: 15px;
-}*/
+    width: 60%;
+    font-size: 0.8rem;
+    margin: 2%;
+    padding-left: 0.5rem;
+}
+
+.descriptif_populaire p
+{
+    display: flex;
+    width: 60%;
+    font-size: 0.7rem;
+    margin: 2%;
+    padding-left: 0.5rem;
+}
+
+.descriptif_populaire i
+{
+    display: flex;
+    width: 60%;
+    font-size: 0.7rem;
+    margin: 2%;
+    padding-left: 0.5rem;
+    color: #0065FC;
+}
 
 /* Activités à Marseille */
 #activites
@@ -352,6 +442,7 @@ nav h2
     display: flex;
     flex-direction: column;
     height: auto;
+    margin: 10px 0 10px 0;
     border: 1px solid; /*Provisoir*/
     border-color: green;
 }
@@ -369,21 +460,19 @@ nav h2
     flex-direction: row;
 }
 
-/*#detail_activite
-nav img
+.detail_activite_grand img, .detail_activite_petit img
 {
-    display: flex;
-    width: 20%;
-    height: 200px;
-}*/
+    width: 90%;
+}
 
-/* Information diverses */
+/*Information diverses*/
 #bas_page
 {
     display: flex;
     flex-direction: row;
     justify-content: start;
     background-color: #f2f2f2;
+    margin: 0% -2% 0 -2%;
 }
 
 #a_propos, #nos_hebergements, #assistance
