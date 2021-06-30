@@ -252,6 +252,7 @@ i
     background-color: #f2f2f2;
 }
 
+/* Titre hébergement */
 #titre_hebergement
 {
     display: flex;
@@ -265,7 +266,7 @@ i
     font-size: 1rem;
 }
 
-/*#descriptif_hergement*/
+/* Détail sur les hébergements */
 #detail_hebergement
 {
     display: flex;
@@ -319,6 +320,7 @@ i
     font-size: 8px;
 }
 
+/* Bouton d'afficher Plus */
 #afficher_plus
 {
     display: flex;
@@ -356,6 +358,7 @@ i
     background-color: #f2f2f2;
 }
 
+/* Titre des populaires */
 #titre_populaire
 {
     display: flex;
@@ -378,6 +381,7 @@ i
     font-size: 0.9rem;
 }
 
+/* Détail sur les populaires */
 #detail_populaire
 {
     display: flex;
@@ -437,6 +441,7 @@ i
     margin: 10px 0 10px 0;
 }
 
+/* Titre des activités */
 #titre_activite
 {
     display: flex;
@@ -450,6 +455,7 @@ i
     font-size: 1rem;
 }
 
+/* Détail sur les activités */
 #detail_activite
 {
     display: flex;
