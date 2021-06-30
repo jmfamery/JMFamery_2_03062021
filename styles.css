@@ -314,7 +314,13 @@ i
     margin: 1% 0 1% 3%;
 }
 
-.descriptif_hebergement i
+.note_hebergement
+{
+    display: flex;
+    margin: 2% 0 1% 3%;
+}
+
+.note_hebergement i
 {
     display: flex;
     font-size: 8px;
@@ -395,7 +401,6 @@ i
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
     height: 33%;
     margin: 3%;
     min-height: 110px;
@@ -418,6 +423,7 @@ i
     display: flex;
     width: 50%;
     font-size: 0.8rem;
+    margin-bottom: 0;
 }
 
 .descriptif_populaire p
@@ -425,9 +431,17 @@ i
     display: flex;
     width: 50%;
     font-size: 0.7rem;
+    margin-top: 2%;
 }
 
-.descriptif_populaire i
+.note_populaire
+{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 3%;
+}
+
+.note_populaire i
 {
     display: flex;
     font-size: 8px;
