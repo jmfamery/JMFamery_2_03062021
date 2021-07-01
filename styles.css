@@ -20,15 +20,19 @@ font-family: 'ralewayregular', serif;
 /* Page principale */
 #bloc_page
 {
-    margin: 3% 2% 0 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1300px;
 }
 
 /* Partie du titre*/
-#Titre
+#titre
 {
     display: flex;
     justify-content: space-between;
-    margin: 5px 0 5px 0;
+    margin: 0 2% 1% 2%; 
 }
 
 /*Logo du site*/
@@ -78,21 +82,21 @@ font-family: 'ralewayregular', serif;
 {
     display: flex;
     flex-direction: column;
-    margin: 15px 0 15px 0;
+    margin: 1% 2% 1% 2%;
 }
 
 #slogan_titre
 h1
 {
     font-size: 1rem;
-    margin: 0 0 5px 0;
+    margin-bottom: 0.5%;
 }
 
 #slogan_titre
 p
 {
     font-size: 0.7rem;
-    margin: 0px;
+    margin: 0;
 }
 
 /* Recherche du lieu */
@@ -103,7 +107,7 @@ p
     justify-content: center;
     width: 300px;
     height: 35px;
-    margin: 10px 0 10px 0;
+    margin: 1.5% 2% 1.5% 2%;
 }
 
 #recherche label
@@ -144,7 +148,7 @@ p
     display: flex;
     align-items: center;
     font-size: 0.6rem;
-    margin: 20px 0 20px 0;
+    margin: 1.5% 2% 0.5% 2%;
 }
 #filtre_libelle
 {
@@ -155,6 +159,7 @@ p
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: start;
     border-left: none;
     border-radius: 30px;
@@ -208,11 +213,10 @@ p
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin: 0 0 20px 0;
+    margin: 0.5% 2% 2.5% 2%;
 }
 
-#slogan_logements
-i
+#slogan_logements i
 {
     display: flex;
     align-items: center;
@@ -238,7 +242,7 @@ i
 #tous_hebergement
 {
     display: flex;
-    margin: 10px 0 10px 0;
+    margin: 2%;
 }
 /* Partie sur les hébergements à Marseille */
 #hebergement
@@ -275,7 +279,7 @@ i
     align-content: space-between;
     justify-content: space-around;
     padding: 0 2% 0 2%;
-    height: 76%;
+    height: 74%;
 }
 
 .descriptif_hebergement
@@ -284,7 +288,7 @@ i
     flex-direction: column;
     width: 29%;
     height: 38%;
-    min-height: 160px;
+    min-height: 170px;
     margin: 1.5%;
     padding: 0.5%;
     border-radius: 20px;
@@ -295,7 +299,7 @@ i
 {
     display: flex;   
     height: 50%;
-    min-height: 100px;
+    min-height: 110px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
@@ -372,7 +376,7 @@ i
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin:5% 6% 0 6%;
+    margin: 5% 7% 0 7%;
 }
 
 #titre_populaire h1
@@ -394,7 +398,7 @@ i
     display: flex;
     flex-direction: column;
     margin: 3%;
-    height: 85%;
+    height: 83%;
 }
 
 .descriptif_populaire
@@ -402,9 +406,9 @@ i
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 33%;
-    margin: 3%;
-    min-height: 110px;
+    height: 30%;
+    margin: 4%;
+    min-height: 100px;
     padding: 1%;
     border-radius: 20px;
     background-color:white;
@@ -454,7 +458,7 @@ i
 {
     display: flex;
     flex-direction: column;
-    margin: 30px 0 50px 0;
+    margin: 2%;
 }
 
 /* Titre des activités */
@@ -577,7 +581,7 @@ i
     flex-direction: row;
     justify-content: start;
     background-color: #f2f2f2;
-    margin: 0% -2% 0 -2%;
+    margin-top: 2%;
 }
 
 #a_propos, #nos_hebergements, #assistance
