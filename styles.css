@@ -240,7 +240,7 @@ i
     display: flex;
     margin: 10px 0 10px 0;
 }
-/* Hébergements à Marseille */
+/* Partie sur les hébergements à Marseille */
 #hebergement
 {
     display: flex;
@@ -252,7 +252,7 @@ i
     background-color: #f2f2f2;
 }
 
-/* Titre hébergement */
+/* Titre de l'hébergement */
 #titre_hebergement
 {
     display: flex;
@@ -293,11 +293,12 @@ i
 
 .descriptif_hebergement img
 {
-    display: flex;    
+    display: flex;   
     height: 50%;
     min-height: 100px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    object-fit: cover;
 }
 
 .descriptif_hebergement h2
@@ -353,7 +354,7 @@ i
     color: #0065FC;
 }
 
-/* Les plus Populaires */
+/* Partie sur les plus Populaires */
 #populaire
 {
     display: flex;
@@ -371,7 +372,7 @@ i
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin:5% 4% 0 4%;
+    margin:5% 6% 0 6%;
 }
 
 #titre_populaire h1
@@ -392,7 +393,7 @@ i
 {
     display: flex;
     flex-direction: column;
-    padding: 1%;
+    margin: 3%;
     height: 85%;
 }
 
@@ -416,6 +417,7 @@ i
     height: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    object-fit: cover;
 }
 
 .descriptif_populaire h2
@@ -447,12 +449,12 @@ i
     font-size: 8px;
 }
 
-/* Activités à Marseille */
+/* Partie sur l'activités à Marseille */
 #activites
 {
     display: flex;
     flex-direction: column;
-    margin: 10px 0 10px 0;
+    margin: 30px 0 50px 0;
 }
 
 /* Titre des activités */
@@ -498,6 +500,7 @@ i
     min-height: 295px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    object-fit: cover;
 }
 
 .detail_activite_grand h2
@@ -526,6 +529,7 @@ i
     min-height: 150px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    object-fit: cover;
 }
 
 .detail_activite_moyen h2
@@ -554,6 +558,7 @@ i
     min-height: 90px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    object-fit: cover;
 }
 
 .detail_activite_petit h2
@@ -565,7 +570,7 @@ i
     border-bottom-right-radius: 15px;
 }
 
-/*Information diverses*/
+/*Partie sur les informations diverses*/
 #bas_page
 {
     display: flex;
@@ -582,18 +587,21 @@ i
     margin: 2% 2% 2% 2%;
 }
 
+/* A propos, Nos hebergements & Assistance */
 #titre_a_propos, #titre_nos_hebegements, #titre_assistance
 {
     display: flex;
     justify-content: start;
 }
 
+/* Titres de : A propos, Nos hebergements & Assistance */
 #titre_a_propos h1, #titre_nos_hebegements h1, #titre_assistance h1
 {
     display: flex;
     font-size: 1rem;
 }
 
+/* Listes de : A propos, Nos hebergements & Assistance */
 #a_propos nav ul, #nos_hebergements nav ul, #assistance nav ul
 {
     display: flex;
