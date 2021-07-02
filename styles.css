@@ -17,6 +17,17 @@ body
 font-family: 'ralewayregular', serif;
 }
 
+/* Couleurs des étoiles de notation */
+.fas.fa-star.blue
+{
+    color: #0065FC;
+}
+
+.fas.fa-star.grey
+{
+    color: #f2f2f2;
+}
+
 /* Page principale */
 #bloc_page
 {
@@ -28,10 +39,11 @@ font-family: 'ralewayregular', serif;
 }
 
 /* Partie du titre*/
-#titre
+#logo_titre
 {
     display: flex;
     justify-content: space-between;
+    height: 60px;
     margin: 0 2% 1% 2%; 
 }
 
@@ -48,35 +60,64 @@ font-family: 'ralewayregular', serif;
 }
 
 /*Bouton de commande du Titre*/
-#bouton_titre nav ul
+#titre
 {
     display: flex;
-    list-style: none;
-}
-
-#bouton_titre nav li
-{
-    margin-left: 3rem;
-}
-
-#bouton_titre nav a
-{
+    justify-content: end;
     font-size: 0.8rem;
-    color: black;
+}
+
+.titre_buton
+{
+    display: flex;
+    align-items: center;
+    padding: 0 5% 0 5%;
+    color:#0065FC;
+}
+
+.titre_buton a
+{
     text-decoration: none;
 }
 
-#bouton_titre nav a:hover
+.titre_buton.hebergements a
 {
-    color: #0065FC;
+    color:#0065FC;
 }
 
-#bouton_titre nav a:focus
+.titre_buton.hebergements a:hover
 {
-    color: #0065FC;
+    color: black;
 }
 
-/* Partie du menu */
+.titre_buton.hebergements
+{
+    border-top: 1px solid #0065FC;
+}
+
+.titre_buton.activites a
+{
+    color: black;
+}
+
+.titre_buton.activites a:hover
+{
+    color:#0065FC;
+}
+
+.titre_buton.inscrire a
+{
+    color:#0065FC;
+    font-weight: 600;
+}
+
+.titre_buton.inscrire a:hover
+{
+    color: black;
+    font-weight: 600;
+}
+
+/* Partie du lieu et de la recherche */
 /* Slogan du titre */
 #slogan_titre
 {
@@ -146,13 +187,15 @@ p
 #filtre
 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 0.6rem;
-    margin: 1.5% 2% 0.5% 2%;
+    margin: 1.5% 2% 0 2%;
 }
 #filtre_libelle
 {
     margin-right: 30px;
+    margin-bottom: 10px;
 }
 
 #filtre_liste
@@ -165,20 +208,13 @@ p
     border-radius: 30px;
 }
 
-#filtre_liste button
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    background-color: #DEEBFF;
-}
-
 .bouton_filtre_liste
 {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 20px;
+    margin-bottom: 10px;
     padding-right: 20px;
     border: 1px solid #f2f2f2;
     border-radius: 30px;
@@ -213,7 +249,7 @@ p
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin: 0.5% 2% 2.5% 2%;
+    margin: 0.5% 2% 0.5% 2%;
 }
 
 #slogan_logements i
@@ -242,7 +278,7 @@ p
 #tous_hebergement
 {
     display: flex;
-    margin: 2%;
+    margin: 1% 2% 1% 2%;
 }
 /* Partie sur les hébergements à Marseille */
 #hebergement
@@ -323,11 +359,6 @@ p
 {
     display: flex;
     margin: 2% 0 1% 3%;
-}
-
-.note_hebergement i
-{
-    display: flex;
     font-size: 8px;
 }
 
@@ -445,20 +476,16 @@ p
     display: flex;
     margin-top: auto;
     margin-bottom: 3%;
-}
-
-.note_populaire i
-{
-    display: flex;
     font-size: 8px;
 }
+
 
 /* Partie sur l'activités à Marseille */
 #activites
 {
     display: flex;
     flex-direction: column;
-    margin: 2%;
+    margin: 1% 2% 1% 2%;
 }
 
 /* Titre des activités */
@@ -476,7 +503,7 @@ p
 }
 
 /* Détail sur les activités */
-#detail_activite
+#activite
 {
     display: flex;
     flex-direction: column;
@@ -486,86 +513,55 @@ p
     height: 350px;
 }
 
-.detail_activite_grand
+.detail_activite
 {
     display: flex;
     flex-direction: column;
     width: 23%;
-    height: 345px;
     border: 1px solid #f2f2f2;
     border-radius: 15px;
 }
 
-
-.detail_activite_grand img
+.detail_activite.grand
 {
-    display: flex;    
-    height: 70%;
-    min-height: 295px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
+    height: 350px;
 }
 
-.detail_activite_grand h2
+.detail_activite.moyen
 {
-    display: flex;
-    font-size: 0.8rem;
-    padding-left: 5%;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-.detail_activite_moyen
-{
-    display: flex;
-    flex-direction: column;
-    width: 23%;
     height: 190px;
-    border: 1px solid #f2f2f2;
-    border-radius: 15px;
 }
 
-.detail_activite_moyen img
+.detail_activite.petit
 {
-    display: flex;    
-    height: 70%;
-    min-height: 150px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
-}
-
-.detail_activite_moyen h2
-{
-    display: flex;
-    font-size: 0.8rem;
-    padding-left: 5%;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-.detail_activite_petit
-{
-    display: flex;
-    flex-direction: column;
-    width: 23%;
     height: 130px;
-    border: 1px solid #f2f2f2;
-    border-radius: 15px;
 }
 
-.detail_activite_petit img
+.detail_activite img
 {
     display: flex;    
     height: 70%;
-    min-height: 90px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
 }
 
-.detail_activite_petit h2
+.detail_activite.grand img
+{
+    min-height: 310px;
+}
+
+.detail_activite.moyen img
+{
+    min-height: 150px;
+}
+
+.detail_activite.petit img
+{
+    min-height: 90px;
+}
+
+.detail_activite h2
 {
     display: flex;
     font-size: 0.8rem;
