@@ -17,17 +17,6 @@ body
 font-family: 'ralewayregular', serif;
 }
 
-/* Couleurs des étoiles de notation */
-.fas.fa-star.blue
-{
-    color: #0065FC;
-}
-
-.fas.fa-star.grey
-{
-    color: #f2f2f2;
-}
-
 /* Page principale */
 #bloc_page
 {
@@ -280,6 +269,18 @@ p
     display: flex;
     margin: 1% 2% 1% 2%;
 }
+
+/* Couleurs des étoiles de notation */
+.fas.fa-star.blue
+{
+    color: #0065FC;
+}
+
+.fas.fa-star.grey
+{
+    color: #f2f2f2;
+}
+
 /* Partie sur les hébergements à Marseille */
 #hebergement
 {
