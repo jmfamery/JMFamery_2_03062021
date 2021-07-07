@@ -31,16 +31,18 @@ font-family: 'ralewayregular', serif;
 #logo_titre
 {
     display: flex;
-    justify-content: space-between;
     height: 70px;
     margin: 0 2% 1% 2%; 
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #logo_titre
     {
+        flex-wrap: wrap;
         margin: 0 0 1% 0;
+        height: 100px;
     }
 }
 
@@ -49,6 +51,7 @@ font-family: 'ralewayregular', serif;
 {
     display: flex;
     align-items: flex-end;
+    width: 72%;
 }
 
 #Logo img
@@ -57,61 +60,85 @@ font-family: 'ralewayregular', serif;
 }
 
 /*Bouton de commande du Titre*/
-#buton
+.titre
 {
     display: flex;
-    justify-content: end;
     font-size: 0.9rem;
+    border: none;
+    background-color: white;
 }
 
-.titre_buton
-{
-    display: flex;
-    align-items: center;
-    padding: 0 5% 0 5%;
-    color:#0065FC;
-}
-
-.titre_buton a
+.titre a
 {
     text-decoration: none;
 }
 
-.titre_buton.hebergements a
+/*modification smartphone*/
+@media (max-width: 420px)
 {
-    color:#0065FC;
+    .titre.page
+    {
+        justify-content: center;
+        order: 2;
+        width: 100%;
+    }
 }
 
-.titre_buton.hebergements a:hover
-{
-    color: black;
-}
-
-.titre_buton.hebergements
+.titre.page.hebergements
 {
     border-top: 1px solid #0065FC;
+    padding: 30px 20px 0 20px;
 }
 
-.titre_buton.activites a
+/*modification smartphone*/
+@media (max-width: 420px)
 {
-    color: black;
+    .titre.page.hebergements
+    {
+        border-top: none;
+        border-bottom: 1px solid #0065FC;
+    }
 }
 
-.titre_buton.activites a:hover
+.titre.page.hebergements a
 {
     color:#0065FC;
 }
 
-.titre_buton.inscrire a
-{
-    color:#0065FC;
-    font-weight: 600;
-}
-
-.titre_buton.inscrire a:hover
+.titre.page.hebergements a:hover
 {
     color: black;
-    font-weight: 600;
+}
+
+.titre.page.activites
+{
+    padding: 30px 20px 0 20px;
+}
+
+.titre.page.activites a
+{
+    color: black;
+}
+
+.titre.page.activites a:hover
+{
+    color:#0065FC;
+}
+
+.titre.autre.inscrire
+{
+    padding: 30px 5px 0 20px;
+}
+
+.titre.autre.inscrire a
+{
+    color:#0065FC;
+    font-weight: bold;
+}
+
+.titre.autre.inscrire a:hover
+{
+    color: black;
 }
 
 /* Partie du lieu et de la recherche */
@@ -123,7 +150,8 @@ font-family: 'ralewayregular', serif;
     margin: 1% 2% 1% 2%;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #slogan_titre
     {
@@ -137,7 +165,8 @@ font-family: 'ralewayregular', serif;
     margin-bottom: 0.5%;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #slogan_titre h1
     {
@@ -162,7 +191,8 @@ font-family: 'ralewayregular', serif;
     margin: 1.5% 2% 1.5% 2%;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #recherche
     {
@@ -202,6 +232,16 @@ font-family: 'ralewayregular', serif;
     background-color: #0065FC;
 }
 
+/*modification smartphone*/
+@media (max-device-width: 480px)
+{
+    #recherche button
+    {
+        background-image: image-set("fas fa-search") ;
+        /*<i class="fas fa-search"></i>*/
+    }
+}
+
 /* Filtre sur le lieu */
 #filtre
 {
@@ -212,7 +252,8 @@ font-family: 'ralewayregular', serif;
     margin: 1.5% 2% 0 2%;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #filtre
     {
@@ -245,11 +286,13 @@ font-family: 'ralewayregular', serif;
     border: 1px solid #f2f2f2;
     border-radius: 30px;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: bold;
     height: 30px;
+    background-color: white;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     .bouton_filtre_liste
     {
@@ -286,7 +329,8 @@ font-family: 'ralewayregular', serif;
     margin: 0.5% 2% 0.5% 2%;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #slogan_logements
     {
@@ -323,7 +367,8 @@ font-family: 'ralewayregular', serif;
     margin: 1% 2% 1% 2%;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #tous_hebergement
     {
@@ -356,12 +401,13 @@ font-family: 'ralewayregular', serif;
     background-color: #f2f2f2;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #hebergement
     {
         width: auto;
-        max-width: 99%;
+        max-width: 100%;
         height: auto;
         background-color: white;
     }
@@ -393,7 +439,8 @@ font-family: 'ralewayregular', serif;
     height: 74%;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #detail_hebergement
     {
@@ -415,7 +462,8 @@ font-family: 'ralewayregular', serif;
     background-color:white;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     .descriptif_hebergement
     {
@@ -433,7 +481,8 @@ font-family: 'ralewayregular', serif;
     object-fit: cover;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     .descriptif_hebergement img
     {
@@ -479,7 +528,7 @@ font-family: 'ralewayregular', serif;
 {
     display: flex;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: bold;
     color: black;
     text-decoration: none;
 }
@@ -500,11 +549,12 @@ font-family: 'ralewayregular', serif;
     background-color: #f2f2f2;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #populaire
     {
-        width: 99%;
+        width: 100%;
         order: -1;
         border-radius: 0;
     }
@@ -520,7 +570,8 @@ font-family: 'ralewayregular', serif;
     margin: 5% 7% 0 7%;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #titre_populaire
     {
@@ -550,7 +601,8 @@ font-family: 'ralewayregular', serif;
     height: 83%;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #detail_populaire
     {
@@ -571,7 +623,8 @@ font-family: 'ralewayregular', serif;
     background-color:white;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     .descriptif_populaire
     {
@@ -622,12 +675,13 @@ font-family: 'ralewayregular', serif;
     margin: 1% 2% 1% 2%;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #activites
     {
         width: 1200px;
-        max-width: 99%;
+        max-width: 100%;
         margin: 1% 0 1% 0;
     }
 }
@@ -657,7 +711,8 @@ font-family: 'ralewayregular', serif;
     height: 350px;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #activite
     {
@@ -675,7 +730,8 @@ font-family: 'ralewayregular', serif;
     border-radius: 15px;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     .detail_activite
     {
@@ -699,7 +755,8 @@ font-family: 'ralewayregular', serif;
     height: 130px;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     .detail_activite.grand, .detail_activite.petit
     {
@@ -731,14 +788,14 @@ font-family: 'ralewayregular', serif;
     min-height: 90px;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     .detail_activite.grand img, .detail_activite.petit img
     {
         min-height: 150px;
     }
 }
-
 
 .detail_activite h2
 {
@@ -759,7 +816,8 @@ font-family: 'ralewayregular', serif;
     margin-top: 2%;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #bas_page
     {
@@ -774,11 +832,12 @@ font-family: 'ralewayregular', serif;
     margin: 2% 2% 2% 2%;
 }
 
-@media (max-width: 420px)
+/*modification smartphone*/
+@media (max-device-width: 480px)
 {
     #a_propos, #nos_hebergements, #assistance
     {
-        width: 99%;
+        width: 100%;
     }
 }
 
