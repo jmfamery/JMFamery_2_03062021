@@ -36,7 +36,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #logo_titre
     {
@@ -59,84 +59,72 @@ font-family: 'ralewayregular', serif;
     width: 80px;
 }
 
+/*modification smartphone*/
+@media (max-device-width: 500px)
+{
+    #logo
+    {
+        align-items: center;
+        padding-left: 5%;
+    }
+}
+
 /*Bouton de commande du Titre*/
 .titre
 {
     display: flex;
+    justify-content: end;
+    align-items: center;
     font-size: 0.9rem;
-    border: none;
-    background-color: white;
-}
-
-.titre a
-{
     text-decoration: none;
 }
 
+.titre.page
+{
+    padding: 25px 25px 25px 25px;
+    color: black;
+}
+
 /*modification smartphone*/
-@media (max-width: 420px)
+@media (max-device-width: 500px)
 {
     .titre.page
     {
         justify-content: center;
         order: 2;
         width: 100%;
+        padding: 15px 0 15px 0;
     }
 }
 
-.titre.page.hebergements
+.titre.page a:hover
 {
-    border-top: 1px solid #0065FC;
-    padding: 30px 20px 0 20px;
+    color:#0065FC;
+}
+
+.titre.page.hebergements:hover
+{
+    border-top: 2px solid #0065FC;
+    color:#0065FC;
 }
 
 /*modification smartphone*/
-@media (max-width: 420px)
+@media (max-device-width: 500px)
 {
-    .titre.page.hebergements
+    .titre.page.hebergements:hover
     {
         border-top: none;
-        border-bottom: 1px solid #0065FC;
+        border-bottom: 2px solid #0065FC;
     }
 }
 
-.titre.page.hebergements a
-{
-    color:#0065FC;
-}
-
-.titre.page.hebergements a:hover
-{
-    color: black;
-}
-
-.titre.page.activites
-{
-    padding: 30px 20px 0 20px;
-}
-
-.titre.page.activites a
-{
-    color: black;
-}
-
-.titre.page.activites a:hover
-{
-    color:#0065FC;
-}
-
-.titre.autre.inscrire
-{
-    padding: 30px 5px 0 20px;
-}
-
-.titre.autre.inscrire a
+.titre.autre
 {
     color:#0065FC;
     font-weight: bold;
 }
 
-.titre.autre.inscrire a:hover
+.titre.autre a:hover
 {
     color: black;
 }
@@ -151,7 +139,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #slogan_titre
     {
@@ -166,7 +154,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #slogan_titre h1
     {
@@ -185,14 +173,13 @@ font-family: 'ralewayregular', serif;
 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     width: 300px;
     height: 35px;
     margin: 1.5% 2% 1.5% 2%;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #recherche
     {
@@ -232,13 +219,31 @@ font-family: 'ralewayregular', serif;
     background-color: #0065FC;
 }
 
+.icone_r
+{
+    display: none;
+}
+
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #recherche button
     {
-        background-image: image-set("fas fa-search") ;
-        /*<i class="fas fa-search"></i>*/
+
+        width: 35px;
+        border-radius: 10px;
+    }
+
+    .texte_r
+    {
+        display: none;
+    }
+
+    .icone_r
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -253,7 +258,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #filtre
     {
@@ -292,7 +297,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     .bouton_filtre_liste
     {
@@ -330,7 +335,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #slogan_logements
     {
@@ -368,13 +373,23 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #tous_hebergement
     {
         flex-direction: column;
         flex-wrap: wrap;
         margin: 1% 0 1% 0;
+    }
+}
+
+/*modification tablette*/
+@media (min-device-width: 501px) and (max-device-width: 920px)
+{
+    #tous_hebergement
+    {
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 
@@ -402,7 +417,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #hebergement
     {
@@ -410,6 +425,15 @@ font-family: 'ralewayregular', serif;
         max-width: 100%;
         height: auto;
         background-color: white;
+    }
+}
+
+/*modification tablette*/
+@media (min-device-width: 501px) and (max-device-width: 920px)
+{
+    #hebergement
+    {
+        width: 100%;
     }
 }
 
@@ -440,7 +464,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #detail_hebergement
     {
@@ -463,7 +487,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     .descriptif_hebergement
     {
@@ -482,7 +506,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     .descriptif_hebergement img
     {
@@ -550,13 +574,25 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #populaire
     {
         width: 100%;
         order: -1;
         border-radius: 0;
+    }
+}
+
+/*modification tablette*/
+@media (min-device-width: 501px) and (max-device-width: 920px)
+{
+    #populaire
+    {
+        width: 100%;
+        max-height: 300px;
+        margin-bottom: 30px;
+        order: -1;
     }
 }
 
@@ -571,11 +607,20 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #titre_populaire
     {
         margin: 5% 4% 0 4%;
+    }
+}
+
+/*modification tablette*/
+@media (min-device-width: 501px) and (max-device-width: 920px)
+{
+    #titre_populaire
+    {
+        margin: 3.1% 3% 0 3.1%;
     }
 }
 
@@ -602,10 +647,22 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #detail_populaire
     {
+        margin: 1%;
+    }
+}
+
+/*modification tablette*/
+@media (min-device-width: 501px) and (max-device-width: 920px)
+{
+    #detail_populaire
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
         margin: 1%;
     }
 }
@@ -629,6 +686,19 @@ font-family: 'ralewayregular', serif;
     .descriptif_populaire
     {
         margin: 2%;
+    }
+}
+
+/*modification tablette*/
+@media (min-device-width: 501px) and (max-device-width: 920px)
+{
+    .descriptif_populaire
+    {
+        margin: 2%;
+        padding: 0.5%;
+        height: 75%;
+        max-height: 180px;
+        width: 29%;
     }
 }
 
@@ -676,7 +746,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #activites
     {
@@ -712,7 +782,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #activite
     {
@@ -731,7 +801,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     .detail_activite
     {
@@ -756,7 +826,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     .detail_activite.grand, .detail_activite.petit
     {
@@ -789,7 +859,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     .detail_activite.grand img, .detail_activite.petit img
     {
@@ -817,7 +887,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #bas_page
     {
@@ -833,7 +903,7 @@ font-family: 'ralewayregular', serif;
 }
 
 /*modification smartphone*/
-@media (max-device-width: 480px)
+@media (max-device-width: 500px)
 {
     #a_propos, #nos_hebergements, #assistance
     {
