@@ -27,50 +27,51 @@ font-family: 'ralewayregular', serif;
     max-width: 1300px;
 }
 
-/* Partie du titre*/
-#logo_titre
+/* Menu */
+#menu
 {
     display: flex;
     height: 70px;
     margin: 0 2% 1% 2%; 
 }
 
-/*modification smartphone*/
+/* Modification smartphone */
 @media (max-device-width: 500px)
 {
-    #logo_titre
+    #menu
     {
         flex-wrap: wrap;
         margin: 0 0 1% 0;
         height: 100px;
+        border-bottom: 2px solid #f2f2ff;
     }
 }
 
-/*Logo du site*/
-#logo
+/* Logo du menu */
+.menu_logo
 {
     display: flex;
     align-items: flex-end;
     width: 72%;
 }
 
-#Logo img
+.menu_logo img
 {
     width: 80px;
 }
 
-/*modification smartphone*/
+/* Modification smartphone */
 @media (max-device-width: 500px)
 {
-    #logo
+    .menu_logo
     {
         align-items: center;
         padding-left: 5%;
     }
 }
 
-/*Bouton de commande du Titre*/
-.titre
+/* Titres de commande du menu */
+.menu_titre
 {
     display: flex;
     justify-content: end;
@@ -79,16 +80,16 @@ font-family: 'ralewayregular', serif;
     text-decoration: none;
 }
 
-.titre.page
+.menu_titre-page
 {
     padding: 25px 25px 25px 25px;
     color: black;
 }
 
-/*modification smartphone*/
+/* Modification smartphone */
 @media (max-device-width: 500px)
 {
-    .titre.page
+    .menu_titre-page
     {
         justify-content: center;
         order: 2;
@@ -97,97 +98,103 @@ font-family: 'ralewayregular', serif;
     }
 }
 
-.titre.page a:hover
+.menu_titre-page a:hover
 {
     color:#0065FC;
 }
 
-.titre.page.hebergements:hover
+.menu_titre-page-hebergements:hover
 {
     border-top: 2px solid #0065FC;
     color:#0065FC;
 }
 
-/*modification smartphone*/
+/* Modification smartphone */
 @media (max-device-width: 500px)
 {
-    .titre.page.hebergements:hover
+    .menu_titre-page-hebergements:hover
     {
         border-top: none;
         border-bottom: 2px solid #0065FC;
     }
 }
 
-.titre.autre
+.menu_titre-autre
 {
     color:#0065FC;
     font-weight: bold;
 }
 
-.titre.autre a:hover
+.menu_titre-autre a:hover
 {
     color: black;
 }
 
-/* Partie du lieu et de la recherche */
-/* Slogan du titre */
-#slogan_titre
+/* Recherche */
+/* Slogan de la recherche */
+#recherche
 {
     display: flex;
     flex-direction: column;
     margin: 1% 2% 1% 2%;
 }
 
-/*modification smartphone*/
+/* Modification smartphone */
 @media (max-device-width: 500px)
 {
-    #slogan_titre
+    #recherche
     {
-        margin: 1% 0 6% 0;
+        margin: 1% 0 5% 0;
     }
 }
 
-#slogan_titre h1
+.recherche_slogan h1
 {
     font-size: 1.1rem;
-    margin-bottom: 0.5%;
+    margin: 1% 0 0.5% 0;
 }
 
-/*modification smartphone*/
+.recherche_slogan p
+{
+    font-size: 0.8rem;
+    margin: 0.5% 0 1% 0;
+}
+
+/* Modification smartphone */
 @media (max-device-width: 500px)
 {
-    #slogan_titre h1
+    .recherche_slogan h1
     {
         margin-bottom: 2%;
     }
+
+    .recherche_slogan p
+    {
+        margin-bottom: 5%;
+    }
 }
 
-#slogan_titre p
-{
-    font-size: 0.8rem;
-    margin: 0;
-}
 
-/* Recherche du lieu */
-#recherche
+/* Lieu de la recherche */
+.recherche_lieu
 {
     display: flex;
     flex-direction: row;
     width: 300px;
     height: 35px;
-    margin: 1.5% 2% 1.5% 2%;
+    margin: 1.5% 0 0.5% 0;
 }
 
 /*modification smartphone*/
 @media (max-device-width: 500px)
 {
-    #recherche
+    .recherche_lieu
     {
         margin: 1.5% 0 1.5% 0;
     }
 }
 
-#recherche label
+.recherche_lieu label
 {
     display: flex;
     align-items: center;
@@ -200,7 +207,7 @@ font-family: 'ralewayregular', serif;
     background-color: #f2f2f2;
 }
 
-#recherche input
+.recherche_lieu input
 {
     padding-left: 10px;
     width: 160px;
@@ -208,7 +215,7 @@ font-family: 'ralewayregular', serif;
     border: none;
 }
 
-#recherche button
+.recherche_lieu button
 {
     width: 100px;
     height: 35px;
@@ -219,7 +226,14 @@ font-family: 'ralewayregular', serif;
     background-color: #0065FC;
 }
 
-.icone_r
+.recherche_lieu-texte
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recherche_lieu-icone
 {
     display: none;
 }
@@ -227,19 +241,18 @@ font-family: 'ralewayregular', serif;
 /*modification smartphone*/
 @media (max-device-width: 500px)
 {
-    #recherche button
+    .recherche_lieu button
     {
-
         width: 35px;
         border-radius: 10px;
     }
 
-    .texte_r
+    .recherche_lieu-texte
     {
         display: none;
     }
 
-    .icone_r
+    .recherche_lieu-icone
     {
         display: flex;
         justify-content: center;
@@ -248,30 +261,29 @@ font-family: 'ralewayregular', serif;
 }
 
 /* Filtre sur le lieu */
-#filtre
+.recherche_filtre
 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     font-size: 0.7rem;
-    margin: 1.5% 2% 0 2%;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    #filtre
+    .recherche_filtre
     {
         margin: 1.5% 0 1.5% 0;
     }
 }
 
-#filtre_libelle
+.recherche_filtre-libelle
 {
     margin-right: 30px;
 }
 
-#filtre_liste
+.recherche_filtre-liste
 {
     display: flex;
     flex-direction: row;
@@ -281,7 +293,7 @@ font-family: 'ralewayregular', serif;
     border-radius: 30px;
 }
 
-.bouton_filtre_liste
+.recherche_filtre-liste-bouton
 {
     display: flex;
     align-items: center;
@@ -296,21 +308,21 @@ font-family: 'ralewayregular', serif;
     background-color: white;
 }
 
-/*modification smartphone*/
-@media (max-device-width: 500px)
+/* Modification smartphone et tablette */
+@media (max-device-width: 920px)
 {
-    .bouton_filtre_liste
+    .recherche_filtre-liste-bouton
     {
         margin-bottom: 10px;
     }
 }
 
-#filtre_liste i
+.recherche_filtre-liste-bouton i
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 0.5rem;
+    margin: 0 10px 0 -5px;
     border-radius: 30px;
     background-color: #DEEBFF;
     color: #0065FC;
@@ -319,37 +331,37 @@ font-family: 'ralewayregular', serif;
     height: 30px;
 }
 
-.bouton_filtre_liste:hover
+.recherche_filtre-liste-bouton:hover
 {
     color: #0065FC;
 }
 
-/* Slogan des logements */
-#slogan_logements
+/* Information de la recherche */
+.recherche_information
 {
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin: 0.5% 2% 0.5% 2%;
+    margin: 0.5% 0 1% 0;
 }
 
-/*modification smartphone*/
+/* Modification smartphone */
 @media (max-device-width: 500px)
 {
-    #slogan_logements
+    .recherche_information
     {
         margin: 0.5% 0 0.5% 0;
     }
 }
 
-#slogan_logements i
+.recherche_information i
 {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid;
-    border-color: lightgrey;
+    border-color: #f2f2ff;
     border-radius: 30px;
     color: #0065FC;
     text-decoration: none;
@@ -358,7 +370,7 @@ font-family: 'ralewayregular', serif;
     height: 18px;
 }
 
-#slogan_logements p
+.recherche_information p
 {
     display: flex; 
     margin-left: 10px;
