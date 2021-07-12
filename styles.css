@@ -74,7 +74,6 @@ font-family: 'ralewayregular', serif;
 .menu_titre
 {
     display: flex;
-    justify-content: end;
     align-items: center;
     font-size: 0.9rem;
     text-decoration: none;
@@ -82,7 +81,7 @@ font-family: 'ralewayregular', serif;
 
 .menu_titre-page
 {
-    padding: 25px 25px 25px 25px;
+    padding: 27px 25px 27px 25px;
     color: black;
 }
 
@@ -137,6 +136,7 @@ font-family: 'ralewayregular', serif;
     display: flex;
     flex-direction: column;
     margin: 1% 2% 1% 2%;
+    min-height: 220px;
 }
 
 /* Modification smartphone */
@@ -144,7 +144,7 @@ font-family: 'ralewayregular', serif;
 {
     #recherche
     {
-        margin: 1% 0 5% 0;
+        margin: 1% 0 3% 0;
     }
 }
 
@@ -179,7 +179,6 @@ font-family: 'ralewayregular', serif;
 .recherche_lieu
 {
     display: flex;
-    flex-direction: row;
     width: 300px;
     height: 35px;
     margin: 1.5% 0 0.5% 0;
@@ -201,7 +200,6 @@ font-family: 'ralewayregular', serif;
     justify-content: center;
     width: 40px;
     height: 35px;
-    border: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: #f2f2f2;
@@ -286,7 +284,6 @@ font-family: 'ralewayregular', serif;
 .recherche_filtre-liste
 {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
     border-left: none;
@@ -337,25 +334,14 @@ font-family: 'ralewayregular', serif;
 }
 
 /* Information de la recherche */
-.recherche_information
+.recherche_info
 {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
     align-items: center;
     margin: 0.5% 0 1% 0;
 }
 
-/* Modification smartphone */
-@media (max-device-width: 500px)
-{
-    .recherche_information
-    {
-        margin: 0.5% 0 0.5% 0;
-    }
-}
-
-.recherche_information i
+.recherche_info i
 {
     display: flex;
     align-items: center;
@@ -370,24 +356,23 @@ font-family: 'ralewayregular', serif;
     height: 18px;
 }
 
-.recherche_information p
+.recherche_info p
 {
-    display: flex; 
     margin-left: 10px;
     font-size: 0.8rem; 
 }
 
-/* Partie sur tous les hébergements */
-#tous_hebergement
+/* Hébergement */
+#hebergement
 {
     display: flex;
     margin: 1% 2% 1% 2%;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    #tous_hebergement
+    #hebergement
     {
         flex-direction: column;
         flex-wrap: wrap;
@@ -395,10 +380,10 @@ font-family: 'ralewayregular', serif;
     }
 }
 
-/*modification tablette*/
+/* modification tablette */
 @media (min-device-width: 501px) and (max-device-width: 920px)
 {
-    #tous_hebergement
+    #hebergement
     {
         flex-direction: column;
         flex-wrap: wrap;
@@ -416,8 +401,8 @@ font-family: 'ralewayregular', serif;
     color: #f2f2f2;
 }
 
-/* Partie sur les hébergements à Marseille */
-#hebergement
+/* hébergement général */
+.hebergement_general
 {
     display: flex;
     flex-direction: column;               
@@ -428,10 +413,10 @@ font-family: 'ralewayregular', serif;
     background-color: #f2f2f2;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    #hebergement
+    .hebergement_general
     {
         width: auto;
         max-width: 100%;
@@ -440,31 +425,28 @@ font-family: 'ralewayregular', serif;
     }
 }
 
-/*modification tablette*/
+/* modification tablette */
 @media (min-device-width: 501px) and (max-device-width: 920px)
 {
-    #hebergement
+    .hebergement_general
     {
         width: 100%;
     }
 }
 
-/* Titre de l'hébergement */
-#titre_hebergement
+/* Titre de l'hébergement général */
+.hebergement_general-titre
 {
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
     margin: 3.1% 3% 0 3.1%;
 }
 
-#titre_hebergement h1
+.hebergement_general-titre h1
 {
     font-size: 1.1rem;
 }
 
-/* Détail sur les hébergements */
-#detail_hebergement
+/* Déscriptif de l'hébergement général */
+.hebergement_general-descriptif
 {
     display: flex;
     flex-direction: column;
@@ -475,17 +457,17 @@ font-family: 'ralewayregular', serif;
     height: 74%;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    #detail_hebergement
+    .hebergement_general-descriptif
     {
         flex-wrap: nowrap;
         height: 1200px;
     }
 }
 
-.descriptif_hebergement
+.hebergement_general-descriptif-lieu
 {
     display: flex;
     flex-direction: column;
@@ -498,18 +480,17 @@ font-family: 'ralewayregular', serif;
     background-color:white;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    .descriptif_hebergement
+    .hebergement_general-descriptif-lieu
     {
         width: auto;
     }
 }
 
-.descriptif_hebergement img
+.hebergement_general-descriptif-lieu img
 {
-    display: flex;   
     height: 50%;
     min-height: 110px;
     border-top-left-radius: 15px;
@@ -517,65 +498,55 @@ font-family: 'ralewayregular', serif;
     object-fit: cover;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    .descriptif_hebergement img
+    .hebergement_general-descriptif-lieu img
     {
         height: 110px;
     }
 }
 
-.descriptif_hebergement h2
+.hebergement_general-descriptif-lieu h2
 {
-    display: flex;
     font-size: 0.9rem;
     margin: 3% 0 1% 3%;
 }
 
-.descriptif_hebergement p
+.hebergement_general-descriptif-lieu p
 {
-    display: flex;
     font-size: 0.8rem;
     margin: 1% 0 1% 3%;
 }
 
-.note_hebergement
+.hebergement_general-descriptif-lieu-note
 {
-    display: flex;
     margin: 2% 0 1% 3%;
     font-size: 8px;
 }
 
 /* Bouton d'afficher Plus */
-#afficher_plus
-{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
 
-#afficher_plus nav ul
+.hebergement_general-bouton nav ul
 {
     list-style: none;
 }
 
-#afficher_plus nav a
+.hebergement_general-bouton nav a
 {
-    display: flex;
     font-size: 0.9rem;
     font-weight: bold;
     color: black;
     text-decoration: none;
 }
 
-#afficher_plus nav a:hover
+.hebergement_general-bouton nav a:hover
 {
     color: #0065FC;
 }
 
-/* Partie sur les plus Populaires */
-#populaire
+/* Hébergement Populaire */
+.herbergement_populaire
 {
     display: flex;
     flex-direction: column;
@@ -585,10 +556,10 @@ font-family: 'ralewayregular', serif;
     background-color: #f2f2f2;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    #populaire
+    .herbergement_populaire
     {
         width: 100%;
         order: -1;
@@ -596,10 +567,10 @@ font-family: 'ralewayregular', serif;
     }
 }
 
-/*modification tablette*/
+/* modification tablette */
 @media (min-device-width: 501px) and (max-device-width: 920px)
 {
-    #populaire
+    .herbergement_populaire
     {
         width: 100%;
         max-height: 300px;
@@ -608,49 +579,46 @@ font-family: 'ralewayregular', serif;
     }
 }
 
-/* Titre des populaires */
-#titre_populaire
+/* Titre de l'hebergement populaire */
+.herbergement_populaire-titre
 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 5% 7% 0 7%;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    #titre_populaire
+    .herbergement_populaire-titre
     {
         margin: 5% 4% 0 4%;
     }
 }
 
-/*modification tablette*/
+/* modification tablette */
 @media (min-device-width: 501px) and (max-device-width: 920px)
 {
-    #titre_populaire
+    .herbergement_populaire-titre
     {
         margin: 3.1% 3% 0 3.1%;
     }
 }
 
-#titre_populaire h1
+.herbergement_populaire-titre h1
 {
-    display: flex;
     font-size: 1.1rem;
     margin-right: 10px;
 }
 
-#titre_populaire i
+.herbergement_populaire-titre i
 {
-    display: flex;
     font-size: 0.9rem;
 }
 
-/* Détail sur les populaires */
-#detail_populaire
+/* Déscriptif sur l'herbergement populaire */
+.herbergement_populaire-descriptif
 {
     display: flex;
     flex-direction: column;
@@ -658,19 +626,19 @@ font-family: 'ralewayregular', serif;
     height: 83%;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    #detail_populaire
+    .herbergement_populaire-descriptif
     {
         margin: 1%;
     }
 }
 
-/*modification tablette*/
+/* modification tablette */
 @media (min-device-width: 501px) and (max-device-width: 920px)
 {
-    #detail_populaire
+    .herbergement_populaire-descriptif
     {
         flex-direction: row;
         justify-content: space-between;
@@ -679,7 +647,7 @@ font-family: 'ralewayregular', serif;
     }
 }
 
-.descriptif_populaire
+.herbergement_populaire-descriptif-lieu
 {
     display: flex;
     flex-direction: column;
@@ -692,19 +660,19 @@ font-family: 'ralewayregular', serif;
     background-color:white;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 480px)
 {
-    .descriptif_populaire
+    .herbergement_populaire-descriptif-lieu
     {
         margin: 2%;
     }
 }
 
-/*modification tablette*/
+/* modification tablette */
 @media (min-device-width: 501px) and (max-device-width: 920px)
 {
-    .descriptif_populaire
+    .herbergement_populaire-descriptif-lieu
     {
         margin: 2%;
         padding: 0.5%;
@@ -714,9 +682,8 @@ font-family: 'ralewayregular', serif;
     }
 }
 
-.descriptif_populaire img
+.herbergement_populaire-descriptif-lieu img
 {
-    display: flex;
     width: 40%;    
     height: 100%;
     border-top-left-radius: 15px;
@@ -724,43 +691,38 @@ font-family: 'ralewayregular', serif;
     object-fit: cover;
 }
 
-.descriptif_populaire h2
+.herbergement_populaire-descriptif-lieu h2
 {
-    display: flex;
     width: 50%;
     font-size: 0.9rem;
     margin-bottom: 0;
 }
 
-.descriptif_populaire p
+.herbergement_populaire-descriptif-lieu p
 {
-    display: flex;
     width: 50%;
     font-size: 0.8rem;
     margin-top: 2%;
 }
 
-.note_populaire
+.herbergement_populaire-descriptif-lieu-note
 {
-    display: flex;
     margin-top: auto;
     margin-bottom: 3%;
     font-size: 8px;
 }
 
 
-/* Partie sur l'activités à Marseille */
-#activites
+/* Activité */
+#activite
 {
-    display: flex;
-    flex-direction: column;
     margin: 1% 2% 1% 2%;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    #activites
+    #activite
     {
         width: 1200px;
         max-width: 100%;
@@ -768,22 +730,14 @@ font-family: 'ralewayregular', serif;
     }
 }
 
-/* Titre des activités */
-#titre_activite
+/* Titre d'activité */
+.activite_titre h1
 {
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-}
-
-#titre_activite h1
-{
-    display: flex;
     font-size: 1rem;
 }
 
-/* Détail sur les activités */
-#activite
+/* Détail de l'activité */
+.activite_descriptif
 {
     display: flex;
     flex-direction: column;
@@ -793,17 +747,17 @@ font-family: 'ralewayregular', serif;
     height: 350px;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    #activite
+    .activite_descriptif
     {
         flex-wrap: nowrap;
         height: auto;
     }
 }
 
-.detail_activite
+.activite_descriptif-lieu
 {
     display: flex;
     flex-direction: column;
@@ -812,133 +766,122 @@ font-family: 'ralewayregular', serif;
     border-radius: 15px;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    .detail_activite
+    .activite_descriptif-lieu
     {
         width: auto;
         margin: 3% 0 3% 0;
     }
 }
 
-.detail_activite.grand
+.activite_descriptif-lieu-grand
 {
     height: 350px;
 }
 
-.detail_activite.moyen
+.activite_descriptif-lieu-moyen
 {
     height: 190px;
 }
 
-.detail_activite.petit
+.activite_descriptif-lieu-petit
 {
     height: 130px;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    .detail_activite.grand, .detail_activite.petit
+    .activite_descriptif-lieu-grand, .activite_descriptif-lieu-petit
     {
         height: 190px;
     }
 }
 
-.detail_activite img
+.activite_descriptif-lieu img
 {
-    display: flex;    
     height: 70%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
 }
 
-.detail_activite.grand img
+.activite_descriptif-lieu-grand img
 {
     min-height: 310px;
 }
 
-.detail_activite.moyen img
+.activite_descriptif-lieu-moyen img
 {
     min-height: 150px;
 }
 
-.detail_activite.petit img
+.activite_descriptif-lieu-petit img
 {
     min-height: 90px;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    .detail_activite.grand img, .detail_activite.petit img
+    .activite_descriptif-lieu-grand img, .activite_descriptif-lieu-petit img
     {
         min-height: 150px;
     }
 }
 
-.detail_activite h2
+.activite_descriptif-lieu h2
 {
-    display: flex;
     font-size: 0.9rem;
     padding-left: 5%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-/*Partie sur les informations diverses*/
-#bas_page
+/* informations diverses */
+#info
 {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     background-color: #f2f2f2;
     margin-top: 2%;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    #bas_page
+    #info
     {
         flex-direction: column;
     }
 }
 
-#a_propos, #nos_hebergements, #assistance
+.info_apropos, .info_hebergement, .info_assistance
 {
-    width: 33%;
-    height: auto;
-    margin: 2% 2% 2% 2%;
+    width: 27%;
+    margin: 2% 0 0 2%;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
-    #a_propos, #nos_hebergements, #assistance
+    .info_apropos, .info_hebergement, .info_assistance
     {
-        width: 100%;
+        width: 96%;
     }
 }
 
-/* A propos, Nos hebergements & Assistance */
-#titre_a_propos, #titre_nos_hebegements, #titre_assistance
-{
-    display: flex;
-    justify-content: start;
-}
-
 /* Titres de : A propos, Nos hebergements & Assistance */
-#titre_a_propos h1, #titre_nos_hebegements h1, #titre_assistance h1
+.info_apropos-titre h1, .info_hebergement-titre h1, .info_assistance-titre h1
 {
-    display: flex;
     font-size: 1.1rem;
 }
 
 /* Listes de : A propos, Nos hebergements & Assistance */
-#a_propos nav ul, #nos_hebergements nav ul, #assistance nav ul
+.info_apropos nav ul, .info_hebergement nav ul, .info_assistance nav ul
 {
     display: flex;
     flex-direction: column;
@@ -948,21 +891,19 @@ font-family: 'ralewayregular', serif;
     padding-left: 0;
 }
 
-#a_propos nav li, #nos_hebergements nav li, #assistance nav li
+.info_apropos nav li, .info_hebergement nav li, .info_assistance nav li
 {
-    display: flex;
     padding-bottom: 5px;
 }
 
-#a_propos nav a, #nos_hebergements nav a, #assistance nav a
+.info_apropos nav a, .info_hebergement nav a, .info_assistance nav a
 {
-    display: flex;
     font-size: 0.9rem;
     color: black;
     text-decoration: none;
 }
 
-#a_propos nav a:hover, #nos_hebergements nav a:hover, #assistance nav a:hover
+.info_apropos nav a:hover, .info_hebergement nav a:hover, .info_assistance nav a:hover
 {
     color: #0065FC;
 }
