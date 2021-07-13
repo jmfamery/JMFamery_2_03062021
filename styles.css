@@ -41,7 +41,7 @@ font-family: 'ralewayregular', serif;
     #menu
     {
         flex-wrap: wrap;
-        margin: 0 0 1% 0;
+        margin: 7% 0 1% 0;
         height: 100px;
         border-bottom: 2px solid #f2f2ff;
     }
@@ -165,11 +165,13 @@ font-family: 'ralewayregular', serif;
 {
     .recherche_slogan h1
     {
-        margin-bottom: 2%;
+        font-size: 1.3rem;
+        margin: 2% 0 2% 0;
     }
 
     .recherche_slogan p
     {
+        font-size: 1rem;
         margin-bottom: 5%;
     }
 }
@@ -184,11 +186,13 @@ font-family: 'ralewayregular', serif;
     margin: 1.5% 0 0.5% 0;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
     .recherche_lieu
     {
+        width: 350px;
+        height: 45px;
         margin: 1.5% 0 1.5% 0;
     }
 }
@@ -205,12 +209,34 @@ font-family: 'ralewayregular', serif;
     background-color: #f2f2f2;
 }
 
+/* modification smartphone */
+@media (max-device-width: 500px)
+{
+    .recherche_lieu label
+    {
+        width: 50px;
+        height: 45px;
+    }
+}
+
 .recherche_lieu input
 {
     padding-left: 10px;
     width: 160px;
     height: 35px;
-    border: none;
+    border: 3px solid #f2f2ff;
+}
+
+/* modification smartphone */
+@media (max-device-width: 500px)
+{
+    .recherche_lieu input
+    {
+        font-size: 1rem;
+        width: 200px;
+        height: 45px;
+        margin-right: -10px;
+    }
 }
 
 .recherche_lieu button
@@ -236,12 +262,13 @@ font-family: 'ralewayregular', serif;
     display: none;
 }
 
-/*modification smartphone*/
+/* modification smartphone */
 @media (max-device-width: 500px)
 {
     .recherche_lieu button
     {
-        width: 35px;
+        width: 45px;
+        height: 45px;
         border-radius: 10px;
     }
 
@@ -272,6 +299,7 @@ font-family: 'ralewayregular', serif;
 {
     .recherche_filtre
     {
+        font-size: 0.8rem;
         margin: 1.5% 0 1.5% 0;
     }
 }
@@ -297,7 +325,7 @@ font-family: 'ralewayregular', serif;
     justify-content: center;
     margin-right: 20px;
     padding-right: 20px;
-    border: 1px solid #f2f2f2;
+    border: 3px solid #f2f2f2;
     border-radius: 30px;
     font-size: 0.9rem;
     font-weight: bold;
@@ -305,8 +333,18 @@ font-family: 'ralewayregular', serif;
     background-color: white;
 }
 
-/* Modification smartphone et tablette */
-@media (max-device-width: 920px)
+/* modification smartphone */
+@media (max-device-width: 500px)
+{
+    .recherche_filtre-liste-bouton
+    {
+        font-size: 1rem;
+        height: 40px;
+    }
+}
+
+/* modification smartphone et tablette */
+@media (max-device-width: 750px)
 {
     .recherche_filtre-liste-bouton
     {
@@ -326,6 +364,17 @@ font-family: 'ralewayregular', serif;
     font-size: 13px;
     width: 30px;
     height: 30px;
+}
+
+/* modification smartphone */
+@media (max-device-width: 500px)
+{
+    .recherche_filtre-liste-bouton i
+    {
+        font-size: 15x;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .recherche_filtre-liste-bouton:hover
@@ -419,7 +468,6 @@ font-family: 'ralewayregular', serif;
     .hebergement_general
     {
         width: auto;
-        max-width: 100%;
         height: auto;
         background-color: white;
     }
@@ -449,7 +497,6 @@ font-family: 'ralewayregular', serif;
 .hebergement_general-descriptif
 {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-around;
@@ -462,6 +509,7 @@ font-family: 'ralewayregular', serif;
 {
     .hebergement_general-descriptif
     {
+        flex-direction: column;
         flex-wrap: nowrap;
         height: 1200px;
     }
@@ -478,6 +526,8 @@ font-family: 'ralewayregular', serif;
     padding: 0.5%;
     border-radius: 20px;
     background-color:white;
+    color: black;
+    text-decoration: none;
 }
 
 /* modification smartphone */
@@ -561,7 +611,7 @@ font-family: 'ralewayregular', serif;
 {
     .herbergement_populaire
     {
-        width: 100%;
+        width: auto;
         order: -1;
         border-radius: 0;
     }
@@ -572,7 +622,7 @@ font-family: 'ralewayregular', serif;
 {
     .herbergement_populaire
     {
-        width: 100%;
+        width: auto;
         max-height: 300px;
         margin-bottom: 30px;
         order: -1;
@@ -641,8 +691,6 @@ font-family: 'ralewayregular', serif;
     .herbergement_populaire-descriptif
     {
         flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
         margin: 1%;
     }
 }
@@ -658,6 +706,8 @@ font-family: 'ralewayregular', serif;
     padding: 1%;
     border-radius: 20px;
     background-color:white;
+    color: black;
+    text-decoration: none;
 }
 
 /* modification smartphone */
@@ -764,6 +814,8 @@ font-family: 'ralewayregular', serif;
     width: 23%;
     border: 1px solid #f2f2f2;
     border-radius: 15px;
+    color: black;
+    text-decoration: none;
 }
 
 /* modification smartphone */
