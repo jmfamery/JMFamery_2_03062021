@@ -41,9 +41,8 @@ font-family: 'ralewayregular', serif;
     #menu
     {
         flex-wrap: wrap;
-        margin: 7% 0 1% 0;
+        margin: 7% 0 3% 0;
         height: 100px;
-        border-bottom: 2px solid #f2f2ff;
     }
 }
 
@@ -57,7 +56,7 @@ font-family: 'ralewayregular', serif;
 
 .menu_logo img
 {
-    width: 80px;
+    width: 90px;
 }
 
 /* Modification smartphone */
@@ -75,7 +74,7 @@ font-family: 'ralewayregular', serif;
 {
     display: flex;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -100,21 +99,20 @@ font-family: 'ralewayregular', serif;
 .menu_titre-page a:hover
 {
     color:#0065FC;
-}
-
-.menu_titre-page-hebergements:hover
-{
-    border-top: 2px solid #0065FC;
-    color:#0065FC;
+    border-top: 3px solid #0065FC;
 }
 
 /* Modification smartphone */
 @media (max-width: 500px)
 {
-    .menu_titre-page-hebergements:hover
+    .menu_titre-page a:hover
     {
         border-top: none;
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
+    }
+    .menu_titre-page a
+    {
+        border-bottom: 3px solid #f2f2ff;
     }
 }
 
@@ -148,53 +146,25 @@ font-family: 'ralewayregular', serif;
     }
 }
 
-.recherche_slogan h1
+.recherche_slogan h2
 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 1% 0 0.5% 0;
 }
 
 .recherche_slogan p
 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0.5% 0 1% 0;
 }
-
-/* Modification smartphone */
-@media (max-width: 500px)
-{
-    .recherche_slogan h1
-    {
-        font-size: 1.3rem;
-        margin: 2% 0 2% 0;
-    }
-
-    .recherche_slogan p
-    {
-        font-size: 1rem;
-        margin-bottom: 5%;
-    }
-}
-
 
 /* Lieu de la recherche */
 .recherche_lieu
 {
     display: flex;
     width: 300px;
-    height: 35px;
-    margin: 1.5% 0 0.5% 0;
-}
-
-/* modification smartphone */
-@media (max-width: 500px)
-{
-    .recherche_lieu
-    {
-        width: 350px;
-        height: 45px;
-        margin: 1.5% 0 1.5% 0;
-    }
+    height: 40px;
+    margin: 1.5% 0 1.5% 0;
 }
 
 .recherche_lieu label
@@ -203,44 +173,25 @@ font-family: 'ralewayregular', serif;
     align-items: center;
     justify-content: center;
     width: 40px;
-    height: 35px;
+    height: 40px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: #f2f2f2;
 }
 
-/* modification smartphone */
-@media (max-width: 500px)
-{
-    .recherche_lieu label
-    {
-        width: 50px;
-        height: 45px;
-    }
-}
-
 .recherche_lieu input
 {
+    font-size: 1rem;
+    width: 200px;
     padding-left: 10px;
-    width: 160px;
+    margin-right: -10px;
     border: 3px solid #f2f2ff;
-}
-
-/* modification smartphone */
-@media (max-width: 500px)
-{
-    .recherche_lieu input
-    {
-        font-size: 1rem;
-        width: 200px;
-        margin-right: -10px;
-    }
 }
 
 .recherche_lieu button
 {
     width: 100px;
-    height: 35px;
+    height: 40px;
     border: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -265,8 +216,8 @@ font-family: 'ralewayregular', serif;
 {
     .recherche_lieu button
     {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         border-radius: 10px;
     }
 
@@ -289,7 +240,7 @@ font-family: 'ralewayregular', serif;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 /* modification smartphone */
@@ -297,7 +248,6 @@ font-family: 'ralewayregular', serif;
 {
     .recherche_filtre
     {
-        font-size: 0.8rem;
         margin: 1.5% 0 1.5% 0;
     }
 }
@@ -326,19 +276,10 @@ font-family: 'ralewayregular', serif;
     padding-left: 0px;
     border: 3px solid #f2f2f2;
     border-radius: 30px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    height: 40px;
     font-weight: bold;
     background-color: white;
-}
-
-/* modification smartphone */
-@media (max-width: 500px)
-{
-    .recherche_filtre-liste-bouton
-    {
-        font-size: 1rem;
-        height: 40px;
-    }
 }
 
 /* modification smartphone et tablette */
@@ -359,20 +300,9 @@ font-family: 'ralewayregular', serif;
     border-radius: 30px;
     background-color: #DEEBFF;
     color: #0065FC;
-    font-size: 13px;
-    width: 30px;
-    height: 30px;
-}
-
-/* modification smartphone */
-@media (max-width: 500px)
-{
-    .recherche_filtre-liste-bouton i
-    {
-        font-size: 15x;
-        width: 40px;
-        height: 40px;
-    }
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
 }
 
 .recherche_filtre-liste-bouton:hover
@@ -483,12 +413,14 @@ font-family: 'ralewayregular', serif;
 /* Titre de l'hébergement général */
 .hebergement_general-titre
 {
-    margin: 3.1% 3% 0 3.1%;
+    display: flex;
+    align-items: center;
+    margin: 2.1% 3.2% 0 3.2%;
 }
 
-.hebergement_general-titre h1
+.hebergement_general-titre h2
 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 /* Déscriptif de l'hébergement général */
@@ -539,8 +471,8 @@ font-family: 'ralewayregular', serif;
 
 .hebergement_general-descriptif-lieu img
 {
-    height: 50%;
-    min-height: 110px;
+    height: 60%;
+    min-height: 100px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
@@ -551,11 +483,11 @@ font-family: 'ralewayregular', serif;
 {
     .hebergement_general-descriptif-lieu img
     {
-        height: 110px;
+        height: 100px;
     }
 }
 
-.hebergement_general-descriptif-lieu h2
+.hebergement_general-descriptif-lieu h3
 {
     font-size: 0.9rem;
     margin: 3% 0 1% 3%;
@@ -654,9 +586,9 @@ font-family: 'ralewayregular', serif;
     }
 }
 
-.herbergement_populaire-titre h1
+.herbergement_populaire-titre h2
 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-right: 10px;
 }
 
@@ -739,7 +671,7 @@ font-family: 'ralewayregular', serif;
     object-fit: cover;
 }
 
-.herbergement_populaire-descriptif-lieu h2
+.herbergement_populaire-descriptif-lieu h3
 {
     width: 50%;
     font-size: 0.9rem;
@@ -779,9 +711,9 @@ font-family: 'ralewayregular', serif;
 }
 
 /* Titre d'activité */
-.activite_titre h1
+.activite_titre h2
 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 /* Détail de l'activité */
@@ -882,7 +814,7 @@ font-family: 'ralewayregular', serif;
     }
 }
 
-.activite_descriptif-lieu h2
+.activite_descriptif-lieu h3
 {
     font-size: 0.9rem;
     padding-left: 5%;
@@ -925,9 +857,9 @@ font-family: 'ralewayregular', serif;
 }
 
 /* Titres de : A propos, Nos hebergements & Assistance */
-.info_apropos-titre h1, .info_hebergement-titre h1, .info_assistance-titre h1
+.info_apropos-titre h2, .info_hebergement-titre h2, .info_assistance-titre h2
 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 /* Listes de : A propos, Nos hebergements & Assistance */
