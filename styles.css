@@ -41,7 +41,7 @@ font-family: 'ralewayregular', serif;
     #menu
     {
         flex-wrap: wrap;
-        margin: 7% 0 3% 0;
+        margin: 7% 0 6% 0;
         height: 100px;
     }
 }
@@ -155,8 +155,18 @@ font-family: 'ralewayregular', serif;
 .recherche_slogan p
 {
     font-size: 0.9rem;
-    margin: 0.5% 0 1% 0;
+    margin: 0.5% 0 0.5% 0;
 }
+
+/* Modification smartphone */
+@media (max-width: 500px)
+{
+    .recherche_slogan p
+    {
+        margin: 3% 0 5% 0;
+    }
+}
+
 
 /* Lieu de la recherche */
 .recherche_lieu
